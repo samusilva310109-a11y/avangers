@@ -1,0 +1,12 @@
+:root{
+    --buttons-color:#0B20D8, #70318D, #A13E69, #D35A41
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    background-image: 
+    linear-gradient(to right, rgba(0,0,0,0.5),rgba(0,0,0,0.9)),url(/img/Imagem-de-fundo/site_71.webp);
+    background-repeat: no-repeat;
+    background-size:cover;
+    font-family: Kanit, sans-serif;
+}
