@@ -4,7 +4,7 @@
 body{
     padding-top: 2vh;
     color: #ffff;
-    width: 100vw;
+    max-width: 100vw;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
@@ -16,7 +16,7 @@ body{
     padding-right: 5vw;
 }
 header{
-    min-width: 664px;
+    width: 664px;
     margin-left: auto;
     margin-right: 0;
     display: flex;
@@ -124,4 +124,68 @@ footer{
     height: 0.1px;
     background-color: #ffff;
 }
-     
+/*mobile*/
+@media (max-width:480px){
+    .text{
+        display: none;
+    }
+    .container ul{
+        display: none;
+    }
+    header nav{
+        display: none;
+    }
+    footer{
+        display: none;
+    }
+
+    body{
+        padding: 3vh 4vw;
+        max-width: 70vw;
+    }
+    header{
+        width: 100vw;
+        padding-right: 5vw;
+        display: flex;
+        justify-content: right;
+        gap: 2px;
+    }
+    header img{
+        max-width: 36px;
+        max-height: 36px;
+    }
+    .container{
+        margin-top: 10vh;
+        justify-content: center;
+    }
+    .container h1{
+        font-size: 30px;
+        padding-right: 5vw;
+        justify-content: center;
+    }
+    .container h6{
+        font-size: 12px;
+        justify-content: center;
+        color: #ffff;
+    }    
+    .container2 span{
+        font-size: 24px;
+        justify-content: left;
+    }
+    .container2 p{
+        justify-content: left;
+        font-size: 10px;
+    }
+    .button{
+        flex-direction: column;
+        height: 90px;
+        max-width: 10px;
+        margin-top: 50vh;
+        margin-left: 20vw;
+        gap: 5px;
+    }
+    .button img{
+        height: 35px;
+        width: 35px;
+    }
+}     
