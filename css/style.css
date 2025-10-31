@@ -158,22 +158,26 @@ footer{
         max-width: 100vw;
     }
     header{
-        width: 100vw;
+        width: 100%;
         padding: 5px 5vw;
         display: flex;
-        justify-content: right;
+        justify-content: space-between;
         gap: 2px;
     }
+    .barra-de-pesquisa{
+        align-self:center;
+    }
     header img{
-        max-width: 36px;
         max-height: 36px;
     }
     .menu-burguer{
         margin-top: 5px;
         display: block;
-        position: absolute;
         left: 5vw;
         top: 3vh;
+    }
+    .barra-de-pesquisa{
+        display: flex;
     }
     .container{
         margin-top: 10vh;
@@ -206,7 +210,7 @@ footer{
         height: 90px;
         width: auto;
         max-width: none;
-        margin: 55vh auto;
+        margin: 45vh auto;
         align-items: center;
         gap: 5px;
         
@@ -215,4 +219,6 @@ footer{
         height: 35px;
         width: 35px;
     }
-}     
+
+   
+}  
