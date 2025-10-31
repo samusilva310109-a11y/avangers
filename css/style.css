@@ -1,12 +1,8 @@
 :root{
     --buttons-color: linear-gradient(120deg, #0B20D8 18%, #70318D 55%, #A13E69 77%, #D35A41 100%);
 }
-html, body{
-    height: 100%;
-}
-
 body{
-    padding-top: 2vh;
+    padding-top: 2vh ;
     color: #ffff;
     width: 100vw;
     min-height: 100vh;
@@ -27,12 +23,11 @@ body{
     display: none;
 }
 header{
-    width: 664px;
-    margin-left: auto;
-    margin-right: 0;
+    width: 100vw;
+    padding-right: 5vw;
     display: flex;
+    justify-content:  right;
     color: #ffff;
-    justify-content: space-between;
     gap: 56px;
 }
 header nav{
@@ -40,10 +35,16 @@ header nav{
     gap: 70px;
 }
 header span{
+    width: 88px;
     font-size: 20px;
 }
 main{
     flex-grow: 1;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: right;
 }
 .container h1{
     padding-right: 5vw;
@@ -54,7 +55,7 @@ main{
 }
 .container ul{
     display: flex;
-    justify-content: flex-end;
+    justify-content: right;
     gap: 40px;
     list-style: none;
     margin-bottom: 51px;
@@ -107,12 +108,12 @@ main{
 }
 .button{
     display: flex;
-    justify-content: right;
+    justify-content: flex-end;
     align-items: center;
     margin: 5vh auto 0;
     gap: 2vw;
-    width: 100%;
-    max-width: 800px;
+    width: right;
+    max-width: 100vw;
 }
 .button span {
     background:var(--buttons-color);
@@ -138,8 +139,50 @@ footer{
     height: 0.1px;
     background-color: #ffff;
 }
+/*Tablet*/
+@media (max-width: 1024px){
+    body{
+        padding-left: 50px;
+    }
+    header{
+        align-items: center;
+    }
+    header span{
+        width: 70px;
+        font-size: 16px;
+    }
+    .container ul{
+        justify-content: flex-start;
+    }
+    .container h6{
+        justify-content: flex-start;
+        color: #B3B3C4;
+    }
+    .text{
+        justify-content: left;
+
+    }
+    .text p{
+        text-align: left;
+        font-size: 16px;
+    }
+    .button{
+        margin: 20vh auto;
+        justify-content: space-between;
+    }
+    .container2 span{
+        justify-content: left;
+    }
+    .container2 p{
+        justify-content: left;
+        color: #B3B3C4;
+    }
+}
 /*mobile*/
 @media (max-width:480px){
+    .lupa{
+        display: none;
+    }
     .text{
         display: none;
     }
@@ -219,6 +262,4 @@ footer{
         height: 35px;
         width: 35px;
     }
-
-   
 }  
